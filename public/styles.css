@@ -1,0 +1,91 @@
+.card{
+    background-color: rgb(126, 119, 119);
+    color: #ebe6e6;
+    font-weight: bold;
+}
+.card-header{
+    background-color: rgb(95, 93, 93);
+    color: #ebe6e6;
+    font-weight: bold;
+}
+
+html, body {
+    background-color: #ababab;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+
+    .position-ref {
+        position: relative;
+    }
+
+    .top-right {
+        position: absolute;
+        right: 10px;
+        top: 18px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 84px;
+    }
+
+    .m-b-md {
+        margin-bottom: 30px;
+    }
+    .pull-up{
+        margin-top:-100px;
+    }
+    .card{
+        width:30em
+    }
+    .main-temp{
+        padding-left: 15px;
+    }
+    .weather{
+        font-size: 25px;
+        font-weight: 900;
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .title {
+        font-size: 34px;
+        text-align: center;
+    }
+    .selection{
+        padding: 10px;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .btn{
+        margin: 5px 0;
+    }
+    .main-temp{
+        padding-left: 20px;
+    }
+    .card{
+        width: 380px;
+    }
+    .weather{
+        font-size: 25px;
+        font-weight: 900;
+    }
+  }

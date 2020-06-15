@@ -12,8 +12,8 @@ class WeatherController extends Controller
     public function loadWWeatherData(Request $request){
 
 
-
-        $response = Http::get('api.openweathermap.org/data/2.5/weather?q=dar&appid=dec4fa76ff428e8c3a0a6a6152d352cd');
+        $api_key = env('WEATHER_API');
+        $response = Http::get('api.openweathermap.org/data/2.5/weather?q=dar&appid='.$api_key);
         $body = json_decode($response->body());
         $temp = $this->fahrenheitToCelcius($body->main->temp);
         $max = $this->fahrenheitToCelcius($body->main->temp_max);
